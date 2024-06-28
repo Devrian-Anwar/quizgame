@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="background-music" src="instrumen.mp3" loop></audio>
+
+    <iframe id="content-frame" src="index2.html"></iframe>
+
+    <script>
+      window.addEventListener("load", function () {
+        var audio = document.getElementById("background-music");
+        audio.play().catch(function (error) {
+          console.log("Autoplay was prevented: " + error);
+        });
+      });
+
+      function navigateTo(page) {
+        document.getElementById("content-frame").src = page;
+      }
+    </script>
+  </body>
+</html>
