@@ -181,7 +181,10 @@
 
         
         <button id="tombolquiz" style="display: none;background-image: linear-gradient(to right, #00e200 0%, #9b25fc 100%);" class="back-button" onclick="startQuiz()">Mulai Quiz</button>
-        <button  class="back-button" onclick="document.location='index2.html'">Kembali</button>
+        
+        <button id="tombolkembali" style="display: none;background-image: linear-gradient(to right, #00e200 0%, #9b25fc 100%);"   class="back-button" onclick="document.location='index2.html'">Kembali</button>
+
+        <button  id="tombolkembali2"  class="back-button" onclick="document.location='index2.html'">Kembali</button>
 
        
         
@@ -192,8 +195,14 @@
       // Fungsi untuk mengubah fungsi onclick pada tombol "Mulai Quiz"
       function changeQuiz(url) {
           var tombolQuiz = document.getElementById('tombolquiz');
+          var tombolKembali = document.getElementById('tombolkembali');
+          var tombolKembali2 = document.getElementById('tombolkembali2');
           tombolQuiz.setAttribute('onclick', "document.location.href='" + url + "'");
+          tombolKembali.setAttribute('onclick', "document.location.href='quiz.html'");
           tombolQuiz.style.display = ''; // Tampilkan tombol "Mulai Quiz"
+          tombolKembali.style.display = '';
+          tombolKembali2.style.display = 'none';
+          
       }
 
       // Fungsi untuk memulai kuis
