@@ -1,0 +1,102 @@
+body {
+  background-image: linear-gradient(120deg, #003fa5 0%, #50c8ff 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(100, 100, 100);
+  /* height: 100%; */
+}
+.kotaktempat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  background-image: linear-gradient(135deg, #667eea 0%, #bbbabb 100%);
+  position: relative;
+  padding: 50px 0px 50px 0px;
+  height: auto;
+}
+#mapsection {
+  width: 50%;
+  height: auto;
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 2;
+}
+
+#Sukamara:hover {
+  fill: yellow;
+}
+
+#Lamandau:hover {
+  fill: yellow;
+}
+
+#Kobar:hover {
+  fill: yellow;
+}
+#Seruyan:hover {
+  fill: yellow;
+}
+#Barut:hover {
+  fill: yellow;
+}
+#Barsel:hover {
+  fill: yellow;
+}
+#Bartim:hover {
+  fill: yellow;
+}
+
+#Kotim:hover {
+  fill: yellow;
+}
+
+#Katingan:hover {
+  fill: yellow;
+}
+
+#Gumas:hover {
+  fill: yellow;
+}
+
+#Palangkaraya:hover {
+  fill: yellow;
+}
+
+#Pulpis:hover {
+  fill: yellow;
+}
+
+#Mura:hover {
+  fill: yellow;
+}
+
+#Kapuas:hover {
+  fill: yellow;
+}
+
+path {
+  fill: #1da1f2;
+}
+#Garis {
+  fill: white;
+}
+path:hover {
+  fill: purple;
+  stroke: rgb(0, 173, 9);
+  stroke-width: 3px;
+  transition: fill 0.4s;
+}

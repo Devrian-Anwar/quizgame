@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Wisata Seruyan</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="landing-page">
+          <img src="img/logo.png" alt="" />
+          <h1>Quiz Wisata Di Seruyan</h1>
+          <div class="line"></div>
+          <p>Uji pengetahuanmu tentang tempat wisata di Seruyan!</p>
+          <p>
+            Skor Jawaban Benar +20 <br />
+            Skor Jawaban Salah -10
+          </p>
+          <p id="skoranda">Skor anda : 0</p>
+          <button onclick="showQuizPage()">MULAI</button>
+          <button onclick="document.location='quiz.html'">KEMBALI</button>
+        </div>
+        <div class="study-page" style="display: none">
+          <h1>Materi Belajar</h1>
+          <div class="line"></div>
+          <button class="back-button" onclick="showLandingPage()">Kembali</button>
+        </div>
+        <div class="quiz-page" style="display: none">
+          <h2 id="question"></h2>
+          <img id="question-image" src="" alt="" style="width: 100%; max-width: 300px; margin-bottom: 20px" />
+          <div id="options-container"></div>
+          <button class="restart-game" onclick="showLandingPage()">Keluar</button>
+        </div>
+        <div class="popup" id="popup">
+          <span id="popup-message"></span>
+          <img id="popup-image" src="" alt="" style="width: 100%; max-width: 300px; margin-top: 20px" />
+          <p id="popup-description"></p>
+          <p id="popup-score"></p>
+          <button onclick="closePopup()">Lanjut</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script-seruyan.js"></script>
+  </body>
+</html>
